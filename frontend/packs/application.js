@@ -15,6 +15,5 @@
 // const imagePath = (name) => images(name, true)
 
 // NOTE: all above commented code is redundant.
-import "./application.pcss";
-
-document.body.insertAdjacentHTML("afterbegin", "Web packer works");
+import "init";
+import "components/page/page";
