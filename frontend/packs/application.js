@@ -7,7 +7,6 @@
 // require("@rails/activestorage").start()
 // require("channels")
 
-
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
 // or the `imagePath` JavaScript helper below.
@@ -16,6 +15,6 @@
 // const imagePath = (name) => images(name, true)
 
 // NOTE: all above commented code is redundant.
-import './application.pcss'
+import "./application.pcss";
 
-document.body.insertAdjacentHTML('afterbegin', 'Web packer works');
+document.body.insertAdjacentHTML("afterbegin", "Web packer works");
