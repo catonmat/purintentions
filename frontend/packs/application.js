@@ -15,5 +15,8 @@
 // const imagePath = (name) => images(name, true)
 
 // NOTE: all above commented code is redundant.
+
+// Load all components from /frontend
 import "init";
 import "components/page/page";
+import "components/auth-form/auth-form";
