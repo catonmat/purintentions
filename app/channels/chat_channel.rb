@@ -6,7 +6,7 @@ class ChatChannel < ApplicationCable::Channel
   end
 
   def send_message(payload)
-    # payload[:message] sent from client side as:
+    # payload['message'] sent from client side as:
     # /frontend/client/chat.js
     # const sendMessage = (message) => chat.perform("send_message", { message });
     puts payload
