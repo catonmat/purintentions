@@ -7,7 +7,7 @@
             <% if message.created_at > Time.now - 24.hours %>
                 <%= l(message.created_at, format: :short) %>
             <% else %>
-                <%= l(messafe.created_at, format: :long) %>
+                <%= l(message.created_at, format: :long) %>
             <% end %>
         </span>
     </div>

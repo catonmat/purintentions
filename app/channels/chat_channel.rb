@@ -9,7 +9,8 @@ class ChatChannel < ApplicationCable::Channel
     # payload[:message] sent from client side as:
     # /frontend/client/chat.js
     # const sendMessage = (message) => chat.perform("send_message", { message });
-    message = Message.new(author: current_user, text: payload[:message])
+    puts payload
+    message = Message.new(author: current_user, text: payload['message'])
 
     ActionCable.server.broadcast("chat", message: render(message)) if message.save
   end
