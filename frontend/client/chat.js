@@ -1,5 +1,6 @@
 import createChannel from "client/cable";
 
+// this variable holds function that will be defined when a message is broadcasted
 let callback;
 
 // Create Channel for client

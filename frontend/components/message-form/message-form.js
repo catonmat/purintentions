@@ -3,14 +3,13 @@ import { sendMessage } from "client/chat";
 
 const isMac = navigator.platform.match(/mac/i) != null;
 
-const handleLineBreak = (i) => {
-  const input = i;
+const handleLineBreak = (input) => {
+  // eslint-disable-next-line
   input.value = `${input.value}\n`;
 };
 
-const handleSubmit = (i) => {
-  const { value } = i;
-  const input = i;
+const handleSubmit = (input) => {
+  const { value } = input;
 
   if (value.length === 0) {
     return;
@@ -18,6 +17,7 @@ const handleSubmit = (i) => {
 
   sendMessage(input.value);
 
+  // eslint-disable-next-line
   input.value = "";
   input.focus();
 };
